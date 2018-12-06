@@ -69,7 +69,6 @@ public class Main {
 				continue;
 		}
 		
-
 	}
 	
 	public static void menu() {

@@ -8,5 +8,4 @@ public interface IlivreDAO {
 	void insertEditeur(String name) throws SQLException;
 	void updateEditeur(int id , String cat) throws SQLException;
 	
-	
 }
