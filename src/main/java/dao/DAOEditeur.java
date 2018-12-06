@@ -17,7 +17,6 @@ import dev.jdbc.ConnectionLivre.ConnectionLivre;
  */
 public class DAOEditeur {
 
-	
 	/**
 	 * Méthode pour récupérer tout les auteur à partir de la base de données Livre table Editeur
 	 */

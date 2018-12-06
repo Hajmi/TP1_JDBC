@@ -44,7 +44,6 @@ public class PrepareLivre {
 			}
 			
 			
-			
 		}
 		catch (Exception e)
 		{
