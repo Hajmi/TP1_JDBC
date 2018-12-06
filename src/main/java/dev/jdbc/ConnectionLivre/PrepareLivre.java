@@ -43,7 +43,6 @@ public class PrepareLivre {
 				System.out.print("\t" + resultSet.getInt("id") + "\t\t" + resultSet.getString("nom") + "\r\n");
 			}
 			
-			
 		}
 		catch (Exception e)
 		{

@@ -15,7 +15,6 @@ public class ConnectionLivre {
 		{
 			conn = ConnectionLivre.getConnection();
 			
-
 			System.out.println("Connexion effective !");
 		}
 		catch (Exception e)
