@@ -7,19 +7,19 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		boolean sortie = false;
-		String newNom = "";
-		int id ;
+		String newNom = ""; //Variable dédié à la mémorisation du nom de l'auteur, saisie par l'utilisateur
+		int id ; //Variable dédié à la mémorisation de l'ID de l'auteur, saisie par l'utilisateur
 		DAOEditeur dao = new DAOEditeur();
 		
 		Scanner scan = new Scanner(System.in);
 		while(!sortie) {
 			menu();
 			int choix = Integer.parseInt(scan.nextLine());
-			
+			//Lister tous les auteurs
 			if(choix == 1 ) {
 				dao.getAllEditeur();
 			}
-			
+			//Ajouter un auteur
 			else if(choix == 2 ) {
 				System.out.println("Veuillez saisir le nouvel auteur svp");
 				newNom = scan.nextLine();
@@ -31,7 +31,7 @@ public class Main {
 					System.out.println(e.getMessage());
 				}
 			}
-			
+			//Supprimer un auteur
 			else if(choix == 3) {
 				System.out.println("Veuillez saisir l'id de l'auteur à supprimer svp");
 				id = Integer.parseInt(scan.nextLine());
@@ -44,7 +44,7 @@ public class Main {
 					
 				}
 			}
-			
+			//Modifier un auteur
 			else if(choix == 4) {
 				System.out.println("Veuillez saisir l'id de l'auteur à modifier svp");
 				id = Integer.parseInt(scan.nextLine());
